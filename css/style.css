@@ -68,8 +68,8 @@
 
 :root {
     --light-yellow: #eef2fe;
-    --primery: #84309a;
-    --dark-black: #84309a;
+    --primery: #000000;
+    --dark-black: #000000;
     --dark-greay: #9599ab;
     --greay: #afafaf;
     --text-greay: #848484;
@@ -417,14 +417,15 @@ header {
     width: 100%;
     z-index: 99999;
     transition: .4s all;
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
+
 }
 
 header.fix_style {
     position: fixed;
     top: 0;
     backdrop-filter: blur(5px);
-    background-color: #84309ab4;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
     padding: 0;
     transition: none;
     opacity: 0;
@@ -643,14 +644,9 @@ header.fixed .navbar {
     padding-top: 70px;
     padding-bottom: 120px;
     position: relative;
+    background-color: var(--primery);
 
     background-size: 300% 300%;
-  	background-image: linear-gradient(
-  	-45deg, 
-  	#84309a 0%, 
-  	#9241a6 25%, 
-  	#84309a 51%, 
-  	#9241a6 100% );  
   	animation: AnimateBG 7s ease infinite;
 }
 
@@ -846,6 +842,14 @@ header.fixed .navbar {
     display: flex;
     position: relative;
 }
+
+.pannel_block .ticket_pic img{ 
+    max-width: 100%;
+    padding: 0%;
+    border: 0px;
+    margin: 0%;
+}
+
 
 .banner_section .banner_slider .left_icon {
     position: absolute;
@@ -2563,15 +2567,15 @@ footer .download_side .app_btn li a img {
 
 .our_value_section .value_slider .value_block {
     background-color: var(--bg-white);
-    padding: 50px;
-    border-radius: 20px;
+    padding: 0px;
+    /* border-radius: 20px; */
     text-align: center;
 }
 
 .our_value_section .value_slider .value_block .icon {
-    width: 95%;
+    width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
